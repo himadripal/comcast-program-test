@@ -1,4 +1,4 @@
-package com.comcast.program;
+package com.sample.program;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.List;
  * Created by Himadri Pal (mehimu@gmail.com) on 6/6/2017.
  * Interprets Command Line and prints output in console
  */
-public class ComcastCLIProgram {
+public class CLIProgram {
     //only supporting these operator, add more here and associated logic in the code
     public enum Operator{
         replace,
@@ -25,7 +25,7 @@ public class ComcastCLIProgram {
             }
             //uncomment these lines if input is file
             /*
-            List<String> input =  Files.readAllLines( Paths.get(ComcastCLIProgram.class.getResource("/comcast-input.txt").toURI()));
+            List<String> input =  Files.readAllLines( Paths.get(CLIProgram.class.getResource("/input.txt").toURI()));
             for(String line : input){
                 System.out.println(commandLineInterpret(line));
             }
